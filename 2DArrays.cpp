@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <limits.h>
 
 using namespace std;
 
@@ -14,7 +15,7 @@ int main(){
     }
   }
 
-  int count = 0, maxCount = 0;
+  int count = 0, maxCount = INT_MIN;
   for (int arr_i = 0; arr_i < (SIZE - 2); arr_i++){
     for (int arr_j = 0; arr_j < (SIZE - 2); arr_j++){
       count += arr[arr_i][arr_j];
